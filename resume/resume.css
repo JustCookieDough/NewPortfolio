@@ -1,0 +1,42 @@
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-button:link {
+    text-decoration: none;
+    color: var(--main-accent);
+}
+
+.download-button:visited {
+    text-decoration: none;
+    color: var(--main-accent);
+}
+
+.download-button {
+    border: solid;
+    border-color: var(--main-accent);
+    padding: 1rem 3rem 1rem;
+    color: var(--main-accent);
+    font-family: "Jetbrains Mono", monospace;
+    /* font-family: "Gazpacho Black", "Times New Roman", Times, serif; */
+    font-size: 1rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.download-button:hover {
+    background-color: rgba(227, 75, 52, 0.2);
+}
+
+.pdf {
+    width: 40rem;
+    height: 22.5rem;
+    border: none;
+}

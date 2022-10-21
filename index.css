@@ -1,0 +1,113 @@
+
+.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--background);
+    opacity: 100;
+    transition: opacity .5s ease-out;
+}
+
+.intro-screen.intro-finished {
+    opacity: 0;
+}
+
+.intro-screen.no-intro {
+    opacity: 0;
+    transition: opacity .0s;
+}
+
+.intro-screen h1 {
+    color: var(--text-color);
+    margin: 0;
+    font-size: 4rem;
+    min-height: 5.33rem;
+    min-width: 26.4rem;
+}
+
+
+.content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+
+    opacity: 0;
+    transition: opacity .5s ease-in;
+
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.content.intro-finished {
+    opacity: 100;
+    pointer-events: all;
+}
+
+.content.no-intro {
+    pointer-events: all;
+    opacity: 100;
+    transition: opacity .0s;
+}
+
+.large-background-text {
+    font-size: 10rem;
+    position: fixed;
+    left: -3.5rem;
+    top: 8rem;
+    color: var(--10-percent);
+    font-family: 'Gazpacho Black', 'Times New Roman', serif;
+    writing-mode: vertical-rl;
+    z-index: -100;
+
+    /* text shadow gradient, not sure if i like it */
+    text-shadow: .2rem .2rem var(--9-percent), .4rem .4rem var(--8-percent), .6rem .6rem var(--7-percent), .8rem .8rem var(--6-percent);
+}
+
+.name-text-div {
+    padding-top: 5rem
+}
+
+.name-text {
+    font-family: "Public Sans", "Helvetica", sans-serif;
+    font-size: 4rem;
+    margin: 0px;
+
+    color: var(--text-color);
+    text-shadow: .2rem .2rem var(--main-accent);
+
+}
+
+.post-name {
+    font-family: "Public Sans", "Helvetica", sans-serif;
+    font-size: 2rem;
+    margin: 0px;
+    color: var(--text-color);
+}
+
+.blurb {
+    color: var(--minor-text-color);
+}
+
+.link-to-about {
+    text-decoration: none;
+}
+
+.link-to-about {
+    color: var(--minor-accent);
+    transition: color .2s;
+}
+
+.link-to-about:hover {
+    color: var(--main-accent);
+}

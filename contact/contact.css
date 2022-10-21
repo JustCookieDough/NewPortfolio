@@ -1,0 +1,47 @@
+
+.email-section {
+    margin-top: 6rem;
+    border: none;
+    border-left: solid;
+    border-color: var(--main-accent);
+    padding-left: 1rem;  
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    justify-self: center;
+}
+
+.email-button:link {
+    text-decoration: none;
+    color: var(--main-accent);
+}
+
+.email-button:visited {
+    text-decoration: none;
+    color: var(--main-accent);
+}
+
+
+.email-blurb {
+    font-size: 1.5rem;
+}
+
+.email-button {
+    border: solid;
+    border-color: var(--main-accent);
+    padding: 1rem 3rem 1rem;
+    /* font-family: "Gazpacho Black", "Times New Roman", Times, serif; */
+    font-size: 1rem;
+    border-radius: .5rem;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.email-button:hover {
+    background-color: rgba(227, 75, 52, 0.2);
+}
