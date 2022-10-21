@@ -32,7 +32,7 @@
 }
 
 .download-button:hover {
-    background-color: rgba(227, 75, 52, 0.2);
+    background-color: var(--semi-transparent-main-accent);
 }
 
 .pdf {
