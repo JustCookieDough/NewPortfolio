@@ -1,0 +1,59 @@
+
+.content-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-grid {
+    width: 59rem;
+    height: 29rem;
+    /* background-color: white; */
+    
+    display: grid;
+    grid-template-columns: [left] 19rem [centerleft] 19rem [centerright] 19rem [right];
+    grid-template-rows: [top] 9rem  [centertop] 9rem [centerbottom] 9rem [bottom];
+
+    gap: 1rem;
+
+}
+
+.project-grid a {
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+
+    color: var(--text-color);
+    background-color: var(--10-percent);
+    transition: color .3s, background-color .3s;
+}
+
+.project-grid a:hover {
+    color: var(--main-accent);
+    background-color: var(--15-percent);
+}
+
+.project-grid a:link {
+    text-decoration: none;
+}
+
+.project-grid a:visited {
+    text-decoration: none;
+}
+
+.snake  {
+    grid-column: left / centerleft;
+    grid-row: top / centerbottom;
+}
+
+.yahoo {
+    grid-column: centerright / right;
+    grid-row: centertop / bottom;
+}
+
+.cooooookies {
+    grid-column: left / centerright;
+    grid-row: centerbottom / bottom;
+}
