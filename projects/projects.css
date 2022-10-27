@@ -6,12 +6,12 @@
 }
 
 .project-grid {
-    width: 59rem;
+    width: 50rem;
     height: 29rem;
     /* background-color: white; */
     
     display: grid;
-    grid-template-columns: [left] 19rem [centerleft] 19rem [centerright] 19rem [right];
+    grid-template-columns: [left] 16rem [centerleft] 16rem [centerright] 16rem [right];
     grid-template-rows: [top] 9rem  [centertop] 9rem [centerbottom] 9rem [bottom];
 
     gap: 1rem;
@@ -23,16 +23,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.75rem;
+    flex-direction: column;
 
     color: var(--text-color);
     background-color: var(--10-percent);
-    transition: color .3s, background-color .3s;
+    transition: color .3s, background-color .3s, background .3s;
+    
+    border: solid;
+    border-color: var(--25-percent);
+    border-width: .075rem;
+
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.75rem;
 }
 
 .project-grid a:hover {
+    background: radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--17-percent) 0rem, var(--12-percent) 5rem);
     color: var(--main-accent);
-    background-color: var(--15-percent);
+    background-color: var(--12-percent);
 }
 
 .project-grid a:link {
@@ -48,12 +56,25 @@
     grid-row: top / centerbottom;
 }
 
-.yahoo {
+.cooooookies {
     grid-column: centerright / right;
     grid-row: centertop / bottom;
 }
 
-.cooooookies {
+.metronome {
     grid-column: left / centerright;
     grid-row: centerbottom / bottom;
+}
+
+i {
+    font-family: "Jetbrains Mono", 'Courier New', Courier, monospace;   
+    font-style: normal;
+    font-size: 1rem;
+    margin: .5rem 1.75rem 0;
+    text-align: center;
+    color: var(--minor-text-color);
+}
+
+.metronome i {
+    margin: .5rem 3rem 0;
 }

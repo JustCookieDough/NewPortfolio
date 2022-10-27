@@ -1,6 +1,6 @@
 :root {
     font-family: 'Jetbrains Mono', 'Courier New', monospace;
-    font-size: 2.53485425vh;
+    font-size: 2.53485425vmin;
 }
 
 @font-face {
@@ -13,9 +13,11 @@ body.dark {
     --6-percent: #070b17;
     --7-percent: #090c1b;
     --8-percent: #0a0e1f;
-    --9-percent: #0b1023;
+    --9-percent: #0b1023; 
     --10-percent: #0c1126;
-    --15-percent: #121a3a; 
+    --12-percent: #0f152f;
+    --15-percent: #121a3a;
+    --17-percent: #151e42; 
     --20-percent: #18234e;
     --25-percent: #1f2c61; 
 
@@ -48,6 +50,7 @@ body {
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .navbar {
@@ -125,6 +128,5 @@ body {
 }
 
 .content-body{
-    padding-left: 15rem;
     width: 42.5rem;
 }
