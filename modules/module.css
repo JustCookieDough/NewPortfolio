@@ -25,6 +25,7 @@ body.dark {
     --minor-text-color: #b1bee7;
 
     --main-accent: #e34b34;
+    --semi-minor-accent: #f96f5a;
     --minor-accent: #f09c8f;
     --semi-transparent-main-accent: rgba(227, 75, 52, 0.2);
 }

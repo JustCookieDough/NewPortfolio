@@ -6,16 +6,26 @@
 }
 
 .project-grid {
-    width: 50rem;
-    height: 29rem;
+    --width: 50rem;
+    --height: 29rem;
+    --gap: 1rem;
+
+    --width-growth: 1rem;
+    --height-growth: .5rem;
+
+    --cell-width: calc((var(--width) - (2*var(--gap))) / 3);
+    --cell-height: calc((var(--height) - (2*var(--gap))) / 3);
+
     /* background-color: white; */
+
+    width: var(--width);
+    height: var(--height);
     
     display: grid;
-    grid-template-columns: [left] 16rem [centerleft] 16rem [centerright] 16rem [right];
-    grid-template-rows: [top] 9rem  [centertop] 9rem [centerbottom] 9rem [bottom];
+    grid-template-columns: [left] var(--cell-width) [centerleft] var(--cell-width) [centerright] var(--cell-width) [right];
+    grid-template-rows: [top] var(--cell-height)  [centertop] var(--cell-height) [centerbottom] var(--cell-height) [bottom];
 
-    gap: 1rem;
-
+    gap: var(--gap);
 }
 
 .project-grid a {
@@ -25,8 +35,7 @@
     justify-content: center;
     flex-direction: column;
 
-    color: var(--text-color);
-    background-color: var(--10-percent);
+    background-color: var(--8-percent);
     transition: color .3s, background-color .3s, background .3s;
     
     border: solid;
@@ -35,6 +44,7 @@
 
     font-family: "Public Sans", sans-serif;
     font-size: 1.75rem;
+    color: var(--semi-minor-accent);
 }
 
 .project-grid a:hover {
