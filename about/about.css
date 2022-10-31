@@ -17,6 +17,18 @@ h3 {
     grid-template-columns: [left] 14rem [centerleft] 14rem [centerright] 14rem [right];
     grid-template-rows: 1.5rem 1.5rem;
 
-
     gap: .25rem;
+}
+
+li {
+    list-style: none;    
+}
+
+li::before {
+    content: "\2022";
+
+    color: var(--main-accent);
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
 }
