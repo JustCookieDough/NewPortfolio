@@ -30,8 +30,12 @@ async function writeLine(obj, text, delay) {
 
 function checkIfVisited() {
     let c = document.cookie
-    let cString = c.split(";")[1].trim()
-    return cString === "seenIntro=true" 
+    let cStringArr = c.split(";")
+    for (let i = 0; i < cStringArr.length; i++) {
+        cStringArr[i] = cStringArr[i].trim()
+        if (cStringArr[i] == "seenIntro=true") {return true}
+    }
+    return false
 }
 
 async function main() {
