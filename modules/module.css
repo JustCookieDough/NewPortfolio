@@ -78,10 +78,10 @@ body {
 .logo-text {
     font-family: 'Gazpacho Black', 'Times New Roman', serif;
     font-size: 3.5rem;
-    padding-left: 3rem;
+    margin: 0;
+    margin-left: 3rem;
     color: var(--text-color);
     transition: color .1s;
-    margin: 0;
 }
 
 .logo-text:hover {
