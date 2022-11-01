@@ -7,7 +7,7 @@
 
 .project-grid {
     --width: 50rem;
-    --height: 29rem;
+    --height: 26rem;
     --gap: 1rem;
 
     --width-growth: 1rem;
@@ -21,6 +21,7 @@
     width: var(--width);
     height: var(--height);
     
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: [left] var(--cell-width) [centerleft] var(--cell-width) [centerright] var(--cell-width) [right];
     grid-template-rows: [top] var(--cell-height)  [centertop] var(--cell-height) [centerbottom] var(--cell-height) [bottom];
