@@ -8,6 +8,11 @@
     src: url(/static/Gazpacho\ Black.otf);
 }
 
+@font-face {
+    font-family: Jetbrains Mono;
+    src: url(/static/JetBrainsMono[wght].ttf);
+}
+
 body.dark {
     --background: #060913; /* 5 % */
     --6-percent: #070b17;
