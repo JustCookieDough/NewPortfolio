@@ -1,6 +1,6 @@
 :root {
     font-family: 'Jetbrains Mono', 'Courier New', monospace;
-    font-size: 1.37777778vw;
+    font-size: min(1.72222222vw, 2.58333333vh);
 }
 
 @font-face {
