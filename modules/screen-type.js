@@ -1,3 +1,1 @@
-const screentype = (window.innerWidth/3)>(window.innerHeight/2) ? "desktop" : "mobile"
-
-console.log(screentype)
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {window.location.replace("http://m.angelid.es");}
